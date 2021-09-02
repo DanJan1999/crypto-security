@@ -1,0 +1,7 @@
+In December 2020, we saw a breach in security into some US government agencies and other larger businesses. 
+This was able to occur due to them all using the same network management software. 
+When the hackers realized this, they were able to insert malware that gathered information and 
+slowly etched deeper into the users information.
+As early as March 2020, this malware started spreading and letting the hackers in to more and 
+more information, including Office 365 for some government officials.
+The motive seems to be mostly observation but there was still damage done.
