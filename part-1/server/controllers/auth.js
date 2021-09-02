@@ -13,7 +13,7 @@ module.exports = {
           if (authenticated) {
             let userToReturn = {...users[i]}
             delete userToReturn.passwordHash
-            res.status(200).send(userToReturn)
+            return res.status(200).send(userToReturn)
 
           };
 
@@ -30,7 +30,7 @@ module.exports = {
       console.log(`Registering new user...`);
 
         const { username, email, firstName, lastName, password } = req.body
-        const salt = bcrypt.genSaltSync(5)
+        const salt = bcrypt.genSaltSync(12)
         const passwordHash = bcrypt.hashSync(password, salt)
 
         let user = {
@@ -44,7 +44,7 @@ module.exports = {
         users.push(user)
         let userToReturn = {...user}
         delete userToReturn.passwordHash
-        res.status(200).send(userToReturn)
+        return res.status(200).send(userToReturn)
 
     }
 
